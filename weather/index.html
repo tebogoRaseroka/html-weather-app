@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1>Weather App</h1>
+      <div class="location-search">
+        <input type="text" id="city-input" placeholder="Search city..." />
+        <button id="search-btn">Search</button>
+      </div>
+    </header>
+
+    <section class="main-content">
+      <div class="left-panel">
+        <div class="current-day">
+          <h2 id="current-day-name">Monday</h2>
+          <p class="time">11:42 PM</p>
+          <p class="temp" id="current-temp">16°C <span>☀️</span></p>
+          <ul>
+            <li id="real-feel">Real Feel: 17°C</li>
+            <li id="wind">Wind: 18 km/h</li>
+            <li id="pressure">Pressure: 1014 hPa</li>
+            <li id="humidity">Humidity: 57%</li>
+          </ul>
+        </div>
+
+        <div class="forecast">
+          <h3>Next 24 Hours</h3>
+          <div class="hours"></div>
+        </div>
+
+        <div class="rain-chart">
+          <h3>Chance of Rain</h3>
+          <div class="bar-chart">
+            <div style="height: 60%"></div>
+            <div style="height: 50%"></div>
+            <div style="height: 40%"></div>
+            <div style="height: 70%"></div>
+            <div style="height: 65%"></div>
+            <div style="height: 30%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-panel">
+        <div class="map-section">
+          <h3>Global Map</h3>
+          <div class="map-placeholder">🗺️ Explore map of wind, weather & oceans</div>
+          <button>Get started</button>
+        </div>
+
+        <div class="cities">
+          <h3>Other Large Cities</h3>
+          <ul>
+            <li>California - 29°C ☀️</li>
+            <li>Beijing - 19°C ☁️</li>
+            <li>Jerusalem - 31°C ☀️</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+ <script src="main.js"></script>
+</body>
+</html>
